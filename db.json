@@ -1,0 +1,22 @@
+{
+  "notes": [
+    {
+      "title": "test 1",
+      "content": "this is the first test and i hope this will run well",
+      "favorite": false,
+      "id": "3ba5"
+    },
+    {
+      "id": "228d",
+      "title": "favo test",
+      "content": "this is a favo test",
+      "favorite": true
+    },
+    {
+      "id": "e186",
+      "title": "iii",
+      "content": "jwjeiwefinweifien",
+      "favorite": false
+    }
+  ]
+}

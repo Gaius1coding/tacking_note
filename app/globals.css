@@ -13,15 +13,108 @@
     --foreground: #ededed;
   }
 }
+/* globals.css */
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* General container */
+.container {
+  padding: 2rem;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Title */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* Input container */
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.input {
+  padding: 0.5rem;
+  margin-right: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 250px;
+}
+
+/* Add button */
+.add-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+/* Notes grid */
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+/* Note card */
+.note-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.note-card:hover {
+  transform: scale(1.05);
+}
+
+/* Note title */
+.note-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* Note content */
+.note-content {
+  margin-bottom: 1rem;
+}
+
+/* Note actions (buttons) */
+.note-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Icon buttons */
+.icon-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+/* Star icon styles */
+.favorite {
+  color: gold;
+}
+
+.not-favorite {
+  color: lightgray;
+}
+
+/* Trash icon */
+.icon-btn:hover {
+  color: #f44336;
 }
